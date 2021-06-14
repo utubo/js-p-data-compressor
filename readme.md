@@ -20,7 +20,7 @@ const revert = pdcDecode(data);
 You can search and fix the source code to customize settings.
 
 ### Max length
-Default: 500
+Default: `500`
 
 ### Reserved symboles
 Default: `ghijklmnopqrstuvwxyzABCDEFGHIJKLNMOPRSTUVWXYZ`
