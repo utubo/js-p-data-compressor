@@ -8,11 +8,11 @@ https://utubo.github.io/js-p-data-compressor/demo.html
 ## Usage
 ```javascript
 const str = '12345,11111,12345';
-const data = pdcEncode('str')
+const data = pdcEncode(str);
 // -> '12345,1kg,ls'
 
 const revert = pdcDecode(data);
-// -> '12345,11111,12345';
+// -> '12345,11111,12345'
 ```
 
 ## Customize
