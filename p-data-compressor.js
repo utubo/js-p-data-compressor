@@ -11,20 +11,20 @@
 		let l = str.length;
 		let i = 0;
 		while (i < l) {
-			let c = data[i];
 			let ss = str.slice(0, i);
 			let from = i - MAX_REPEAT + 1;
 			let head;
-			let len = 0;
-			for (let j = 2; j <= l-i; j ++) {
+			let len;
+			for (let j = 3; j <= l-i; j ++) {
 				let k = ss.indexOf(str.substr(i, j), from);
 				if (k === -1) break;
 				head = ss.length - k;
 				len = j;
 			}
-			if (2 < len) {
+			if (len) {
 				out += symbols[len] + symbols[head];
 			} else {
+				let c = data[i];
 				out += c;
 				len = 1;
 				while (c === data[i + len] && len < MAX_REPEAT) len ++;
