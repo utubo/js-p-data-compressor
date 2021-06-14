@@ -1,0 +1,49 @@
+<!DCOTYPE html>
+<html>
+	<head>
+		<title>p-data-compressor demo</title>
+		<style>
+		body {
+			background: #303035;
+			color: #cdc;
+			padding: 1rem;
+		}
+		textarea {
+			background: #303035;
+			border: 1pt solid;
+			border-radius: 5pt;
+			color: #cdc;
+			display: block;
+			height: 5rem;
+			margin-bottom: 1rem;
+			padding: .2rem;
+			width: 100%;
+		}
+		button {
+			background: #303035;
+			border: 2pt solid;
+			border-radius: 10pt;
+			color: #cdc;
+			padding: .5rem 1rem;
+			transition: .2s;
+		}
+		button:hover {
+			background: #666;
+		}
+		</style>
+	</head>
+	<body>
+		<textarea id="src">12345,12345,00000</textarea>
+		<textarea id="dst"></textarea>
+		<button onClick="dst.value = pdcEncode(src.value);">Encode</button>
+		<button onClick="src.value = pdcDecode(dst.value);">Decode</button>
+		<script>
+// p-data-compressor
+// Copyright (c) 2021 utubo under the [MIT](https://opensource.org/licenses/mit-license.php)
+{let e=e=>{if(500<e.length)throw"too long"},t="ghijklmnopqrstuvwxyzABCDEFGHIJKLNMOPRSTUVWXYZ";
+pdcEncode=l=>{e(l);let r=t.length,n=l.split(""),f="",o=l.length,g=0;for(;g<o;){let e,s=n[g],h=l.slice(0,g),i=g-r+1,u=0;for(let t=2;t<=o-g;t++){let r=h.indexOf(l.substr(g,t),i);if(-1===r)break;e=h.length-r,u=t}if(2<u)f+=t[u]+t[e];else{for(f+=s,u=1;s===n[g+u]&&u<r;)u++;2<u?f+=t[u-1]+t[0]:u=1}g+=u}return f},
+pdcDecode=l=>{e(l);let r,n="";for(let f of l){e(n);let l=t.indexOf(f);-1===l?n+=f:r?(n+=l?n.substr(n.length-l,r):n[n.length-1].repeat(r),r=0):r=l}return n}}
+		</script>
+	</body>
+</html>
+
