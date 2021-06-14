@@ -1,6 +1,7 @@
 
 This is a compressor for https://utb.sakura.ne.jp/tekitou/p
-This compresses a text matches /^[0-9a-f,]+$/.
+
+This compresses a text matches `/^[0-9a-f,]+$/`.
 
 ## Usage
 ```javascript
