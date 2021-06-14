@@ -2,6 +2,9 @@
 This is a compressor for https://utb.sakura.ne.jp/tekitou/p<br>
 This compresses a text matches `/^[0-9a-f,]+$/`.
 
+## Demo
+https://utubo.github.io/js-p-data-compressor/demo.html
+
 ## Usage
 ```javascript
 const str = '12345,11111,12345';
