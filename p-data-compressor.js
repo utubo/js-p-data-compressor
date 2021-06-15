@@ -48,12 +48,12 @@
 			if (symbol === -1) {
 				out += c;
 			} else if (len) {
-					if (symbol) {
-						out += out.substr(out.length - symbol, len);
-					} else {
-						out += out[out.length - 1].repeat(len);
-					}
-					len = 0;
+				if (symbol) {
+					out += out.substr(out.length - symbol, len);
+				} else {
+					out += out[out.length - 1].repeat(len);
+				}
+				len = 0;
 			} else {
 				len = symbol;
 			}
