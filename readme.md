@@ -25,6 +25,6 @@ Default: `500`
 ### Reserved symboles
 Default: `ghijklmnopqrstuvwxyzABCDEFGHIJKLNMOPRSTUVWXYZ`
 
-## Lisense
+## License
 Copyright (c) 2021 utubo under the [MIT](https://opensource.org/licenses/mit-license.php)
 
