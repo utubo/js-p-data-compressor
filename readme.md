@@ -1,4 +1,4 @@
-COUTION: I will change reserved symbols.
+COUTION: I will change reserved symbols and API.
 Wait for use this !
 
 
