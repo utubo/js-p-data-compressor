@@ -1,5 +1,5 @@
-COUTION: I will change reserved symbols and API.
-Wait for use this !
+⚠️COUTION: I will change reserved symbols and API.
+Wait for use this !⚠️
 
 
 This is a compressor for https://utb.sakura.ne.jp/tekitou/p<br>
