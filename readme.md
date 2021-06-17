@@ -1,3 +1,6 @@
+COUTION: I will change reserved symbols.
+Wait for use this !
+
 
 This is a compressor for https://utb.sakura.ne.jp/tekitou/p<br>
 This compresses a text matches `/^[0-9a-f,]+$/`.
