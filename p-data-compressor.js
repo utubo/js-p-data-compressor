@@ -5,7 +5,7 @@
 	let symbols = "ghijklmnopqrstuvwxyzABCDEFGHIJKLNMOPRSTUVWXYZ";
 	var pdcEncode = str => {
 		checkLen(str);
-		let MAX_RANGE = symbols.length;
+		let MAX_RANGE = symbols.length - 1;
 		let STR_LENGTH = str.length;
 		let out = '';
 		let i = 0;
@@ -26,7 +26,7 @@
 				let c = str[i];
 				out += c;
 				len = 1;
-				while (c === str[i + len] && len < MAX_RANGE) len ++;
+				while (c === str[i + len] && len <= MAX_RANGE) len ++;
 				if (2 < len) {
 					out += symbols[len - 1] + symbols[0];
 				} else {
